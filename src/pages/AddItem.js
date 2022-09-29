@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 const AddItem = () => {
   const [form, setForm] = useState({})
-  const navigate = useNavigate()
+  let navigate = useNavigate()
 
   console.log(navigate)
   const sendItem = (event) => {
@@ -13,11 +13,12 @@ const AddItem = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(form),
+      body: JSON.stringify(form)
     })
       .then((res) => res.json())
       .then(() => navigate('/'))
       .catch((err) => console.error(err))
+      navigate('/')
   }
   const handleForm = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -116,7 +117,7 @@ const AddItem = () => {
               <option value='not available'/>
             </datalist>
       </form>
-      <button onClick={sendItem}>Add Item</button>
+      <button className="add-btn" onClick={event=>sendItem(event)}>Add Item</button>
     </div>
   )
 }

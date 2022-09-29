@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react"
 import { ItemCard } from "../components/ItemCard"
+
 const AllItems=()=>{
     const [items,setItems]=useState([])
     const [search,setSearch]=useState("")
@@ -23,7 +24,7 @@ const AllItems=()=>{
     return(
     <div className="container">
     <h1>Home component</h1>
-    <input type="text" placeholder="...search by zip" className="search" onChange={(event)=>setSearch(event.target.value)} />
+    <input type="number" placeholder="...search by zip" className="search" onChange={(event)=>setSearch(event.target.value)} />
     <div className="products">{allItems}</div>
     </div>
         

@@ -11,18 +11,19 @@ const Furniture = () => {
       .catch((err) => console.error(err))
   }, [])
 
- const furnitureFiltered =
-    items.filter((item) => {
-      if  (item.category==="furniture")
-    return (item)}).map((item,key)=>{
-        return( <ItemCard key={key} item={item}/>)})
-        return(
-            <div className="container">
-            <h1>Home component</h1>
-            <div className="products">{furnitureFiltered}</div>
-            </div>
-       
-    )
+  const furnitureFiltered = items
+    .filter((item) => {
+      if (item.category === 'furniture') return item
+    })
+    .map((item, key) => {
+      return <ItemCard key={key} item={item} />
+    })
+  return (
+    <div className='container'>
+      <h1>Home component</h1>
+      <div className='products'>{furnitureFiltered}</div>
+    </div>
+  )
 }
 
 export default Furniture

@@ -17,7 +17,7 @@ const SingleItem = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(form),
+      body: JSON.stringify(form)
     })
       .then((res) => res.json())
       .then(() => navigate('/'))
@@ -36,6 +36,7 @@ const SingleItem = () => {
         <h4>Phone:{phone}</h4>
         <p>Condition:{condition}</p>
         <p>Zip Code:{zip}</p>
+        <p>Availability:{availability}</p>
         {showForm && (
           <form className='add-form' action=''>
             <label htmlFor=''>Item title</label>

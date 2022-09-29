@@ -16,8 +16,8 @@ const Kids = () => {
  const kidsFiltered =
     items.filter((item) => {
       if  (item.category==="kids")
-    return (item)}).map((item,key)=>{
-        return( <ItemCard key={key} item={item}/>)})
+    return (item)}).map((item)=>{
+        return( <ItemCard item={item}/>)})
         return(
             <div className="container">
             <h1>All For Kids</h1>

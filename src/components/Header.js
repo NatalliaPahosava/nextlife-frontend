@@ -3,7 +3,7 @@ const Header=()=>{
         <div className="header">
             
         <ul>
-            <h2>What unnecessary for you,can be used somebody else</h2>
+            <h1>NextLive</h1>
             <li><a href="/about">About</a></li>
             <li><a href="/">All Items</a></li>
             <li><a href="/men">Men</a></li>

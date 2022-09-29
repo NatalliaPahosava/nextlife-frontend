@@ -11,18 +11,19 @@ const ForWomen = () => {
       .catch((err) => console.error(err))
   }, [])
 
- const forWomenFiltered =
-    items.filter((item) => {
-      if  (item.category==="women")
-    return (item)}).map((item,key)=>{
-        return( <ItemCard key={key} item={item}/>)})
-        return(
-            <div className="container">
-            <h1>Home component</h1>
-            <div className="products">{forWomenFiltered}</div>
-            </div>
-       
-    )
+  const forWomenFiltered = items
+    .filter((item) => {
+      if (item.category === 'women') return item
+    })
+    .map((item, key) => {
+      return <ItemCard key={key} item={item} />
+    })
+  return (
+    <div className='container'>
+      <h1>Home component</h1>
+      <div className='products'>{forWomenFiltered}</div>
+    </div>
+  )
 }
 
 export default ForWomen
