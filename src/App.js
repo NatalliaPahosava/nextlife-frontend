@@ -21,8 +21,8 @@ function App() {
     <BrowserRouter>
     <Header/>
       <Routes>
-        <Route path='about' element={<About/>}/>
-        <Route path='/' element={<AllItems />} />
+        <Route path='/' element={<About/>}/>
+        <Route path='/all' element={<AllItems />} />
         <Route path='/single-item' element={<SingleItem/>}/>
         <Route path='/add-item' element={<AddItem/>} />
         <Route path='/men' element={<ForMen/>} />

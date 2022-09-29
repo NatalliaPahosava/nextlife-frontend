@@ -19,8 +19,10 @@ const ForWomen = () => {
       return <ItemCard key={key} item={item} />
     })
   return (
-    <div className='container'>
-      <h1>Home component</h1>
+    <div className='container-all'>
+      <hr/>
+      <h1>ALL FOR WOMAN</h1>
+      <hr/>
       <div className='products'>{forWomenFiltered}</div>
     </div>
   )

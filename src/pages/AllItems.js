@@ -22,9 +22,11 @@ const AllItems=()=>{
     })
 
     return(
-    <div className="container">
-    <h1>Home component</h1>
-    <input type="number" placeholder="...search by zip" className="search" onChange={(event)=>setSearch(event.target.value)} />
+    <div className="container-all">
+    <hr/>
+    <h1>ALL CATEGORIES</h1>
+    <hr/>
+    <input type="number" placeholder="...Search by zip" className="search" onChange={(event)=>setSearch(event.target.value)} />
     <div className="products">{allItems}</div>
     </div>
         

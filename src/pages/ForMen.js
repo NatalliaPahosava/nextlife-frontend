@@ -17,8 +17,10 @@ const ForMen = () => {
     return (item)}).map((item,key)=>{
         return( <ItemCard key={key} item={item}/>)})
         return(
-            <div className="container">
-            <h1>Home component</h1>
+            <div className="container-all">
+              <hr/>
+            <h1>ALL FOR MEN</h1>
+            <hr/>
             <div className="products">{forMenFiltered}</div>
             </div>
        

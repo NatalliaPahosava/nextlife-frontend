@@ -16,9 +16,9 @@ const AddItem = () => {
       body: JSON.stringify(form)
     })
       .then((res) => res.json())
-      .then(() => navigate('/'))
+      .then(() => navigate('/all'))
       .catch((err) => console.error(err))
-      navigate('/')
+      navigate('/all')
   }
   const handleForm = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -34,6 +34,7 @@ const AddItem = () => {
           placeholder='Clothes for girl'
           name='title'
           id='title'
+          defaultValue='title'
         />
 
         <label htmlFor=''>Image:</label>
@@ -43,6 +44,7 @@ const AddItem = () => {
           placeholder='http://image.com'
           name='image'
           id='image'
+          defaultValue='image'
         />
 
         <label htmlFor=''>Category:</label>
@@ -53,6 +55,7 @@ const AddItem = () => {
           placeholder='ex.kids'
           name='category'
           id='category'
+          defaultValue='kids'
         />
         <datalist id='categories'>
           <option value='kids' />
@@ -70,6 +73,7 @@ const AddItem = () => {
           placeholder='clothes for boys size 2T'
           name='description'
           id='description'
+          defaultValue='clothes for boys'
         />
 
         <label htmlFor=''>Condition:</label>

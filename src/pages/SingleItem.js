@@ -20,7 +20,7 @@ const SingleItem = () => {
       body: JSON.stringify(form)
     })
       .then((res) => res.json())
-      .then(() => navigate('/'))
+      .then(() => navigate('/all'))
       .catch((err) => console.error(err))
   }
   const handleForm = (e) => {
@@ -37,6 +37,8 @@ const SingleItem = () => {
         <p>Condition:{condition}</p>
         <p>Zip Code:{zip}</p>
         <p>Availability:{availability}</p>
+        
+        <div className='update-form'>
         {showForm && (
           <form className='add-form' action=''>
             <label htmlFor=''>Item title</label>
@@ -137,6 +139,7 @@ const SingleItem = () => {
         )}
         <button onClick={() => setShowForm(!showForm)}>showForm</button>
       </div>
+    </div>
     </div>
   )
 }

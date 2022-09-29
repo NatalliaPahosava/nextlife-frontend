@@ -19,8 +19,10 @@ const Furniture = () => {
       return <ItemCard key={key} item={item} />
     })
   return (
-    <div className='container'>
-      <h1>Home component</h1>
+    <div className='container-all'>
+      <hr/>
+      <h1>FURNITURE</h1>
+      <hr/>
       <div className='products'>{furnitureFiltered}</div>
     </div>
   )

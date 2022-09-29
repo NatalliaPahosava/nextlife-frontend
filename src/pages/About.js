@@ -1,7 +1,9 @@
 const About = () => {
   return (
     <div className='about'>
+      <hr color="red"/>
       <h1>NextLive</h1>
+      <hr color="red"/>
       <h2>What unnecessary for you,can be used somebody else</h2>
       <h3>If You want to share click on the button Add</h3>
        <a href="/add-item"><button className="add-btn">Add</button></a>

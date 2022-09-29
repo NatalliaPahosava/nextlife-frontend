@@ -19,8 +19,10 @@ const Kids = () => {
     return (item)}).map((item)=>{
         return( <ItemCard item={item}/>)})
         return(
-            <div className="container">
-            <h1>All For Kids</h1>
+            <div className="container-all">
+              <hr/>
+            <h1>ALL FOR KIDS</h1>
+            <hr/>
             <div className="products">{kidsFiltered}</div>
             </div>
        
