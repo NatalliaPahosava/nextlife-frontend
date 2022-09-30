@@ -2,8 +2,7 @@ const Header = () => {
   return (
     <div className='header'>
       <ul>
-        <a href='/'>
-          <img
+        <a href='/'> <img
             width='100px'
             src='https://freesvg.org/img/1661256469diamond-heart.png'
             alt=''

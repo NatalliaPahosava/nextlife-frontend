@@ -12,17 +12,21 @@ body {
 .header {
   height: 100px;
   color: white;
+  display: flex;
+  background-color: rgb(35, 138, 234);
+  /* flex-direction: row; */
+  margin: auto;
 }
 
 .container-about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .about h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 90px;
   min-height: 90px;
-  color: rgb(35, 138, 234);
+  color: rgb(22, 104, 180);
   text-align: center;
   margin: auto;
   background-color: white;
@@ -93,21 +97,20 @@ body {
 
 ul {
   display: flex;
+  flex-direction: row;
   height: 100px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
+
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
+
+  
   background-color: rgb(35, 138, 234);
 }
 
-li {
-  float: left;
-}
+
 
 li a {
   border: solid white;
@@ -128,7 +131,7 @@ li a:hover {
 }
 
 .container {
-  max-width: 1200px;
+  min-width: 1200px;
   margin: 4rem auto;
   min-height: 70vh;
 }
