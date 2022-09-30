@@ -32,11 +32,11 @@ const SingleItem = () => {
       <div className='single-item'>
         <h1>{title}</h1>
         <img src={image} alt=''/>
-        <h3>Description:{description}</h3>
-        <h4>Phone:{phone}</h4>
-        <p>Condition:{condition}</p>
-        <p>Zip Code:{zip}</p>
-        <p>Availability:{availability}</p>
+        <p><b>Description:</b>{description}</p>
+        <p><b>Phone:</b>{phone}</p>
+        <p><b>Condition:</b>{condition}</p>
+        <p><b>Zip Code:</b>{zip}</p>
+        <p><b>Availability:</b>{availability}</p>
         
         <div className='update-form'>
         {showForm && (
@@ -137,7 +137,7 @@ const SingleItem = () => {
             <button onClick={handleUpdate}>Update Item</button>
           </form>
         )}
-        <button onClick={() => setShowForm(!showForm)}>showForm</button>
+        <button className='form-btn' onClick={() => setShowForm(!showForm)}>Show Form</button>
       </div>
     </div>
     </div>
