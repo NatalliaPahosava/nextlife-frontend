@@ -29,9 +29,9 @@ const SingleItem = () => {
 
   return (
     <div className='container'>
-      <div className='single-product'>
+      <div className='single-item'>
         <h1>{title}</h1>
-        <img src={image} alt='' />
+        <img src={image} alt=''/>
         <h3>Description:{description}</h3>
         <h4>Phone:{phone}</h4>
         <p>Condition:{condition}</p>

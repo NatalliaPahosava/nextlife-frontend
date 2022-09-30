@@ -24,9 +24,11 @@ const AddItem = () => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
   return (
-    <div className='container'>
+    <div className='adding'>
+      <div className='add-item'>
       <h1>Add Item</h1>
       <form className='add-form' action=''>
+        
         <label htmlFor=''>Item title</label>
         <input
           onChange={(e) => handleForm(e)}
@@ -122,6 +124,7 @@ const AddItem = () => {
             </datalist>
       </form>
       <button className="add-btn" onClick={event=>sendItem(event)}>Add Item</button>
+    </div>
     </div>
   )
 }

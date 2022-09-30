@@ -106,11 +106,8 @@ ul {
   align-items: center;
   list-style-type: none;
 
-  
   background-color: rgb(35, 138, 234);
 }
-
-
 
 li a {
   border: solid white;
@@ -148,9 +145,9 @@ li a:hover {
   background-color: white;
   font-family: 'Times New Roman', Times, serif;
 }
-.container-all hr{
- border: solid 1px;
- border-color: red;
+.container-all hr {
+  border: solid 1px;
+  border-color: red;
 }
 .container-all input {
   width: 300px;
@@ -188,7 +185,7 @@ li a:hover {
 .products-item:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.904);
 }
-.products-item p{
+.products-item p {
   text-align: left;
 }
 .products-item > img {
@@ -212,7 +209,7 @@ footer {
   padding: 2rem;
 }
 
-.add-form label {
+.add-item .add-form label {
   margin: 2rem;
 }
 
@@ -220,7 +217,7 @@ footer {
   float: right;
 }
 
-.single-product {
+.single-item{
   padding: 2rem;
   margin: 2rem 0;
   border-radius: 5px;
@@ -231,12 +228,28 @@ footer {
   transition: 0.3s;
 }
 
-.single-product > img {
+.single-item > img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
+.single-item {
+  margin: 3rem auto;
+  padding: 36px;
+  text-decoration: none;
+  color: #716c6b;
+  width: 450px;
+  height: 700px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 15px 15px 30px #5f12b8, -15px -15px 30px #37038a;
+}
 
+.single-item > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 .contact {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -281,6 +294,28 @@ footer {
   width: 300px;
   height: 400px;
   border-radius: 92px;
-  background: #382253d8;
-  box-shadow: 15px 15px 30px #2b057f, -15px -15px 30px #1d0544;
+  background: #6993f3f8;
+  box-shadow: 15px 15px 30px #4d0dd6, -15px -15px 30px #050844;
 }
+.adding{
+  background-image: url('https://media.istockphoto.com/photos/3d-mockup-podium-with-draped-fabric-in-lavender-color-abstract-modern-picture-id1345448675?b=1&k=20&m=1345448675&s=170667a&w=0&h=PX40wdJl-1YQmszxU-BMUOomp4Zc6vjhYlgZcYUuET8=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.add-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.add-form {
+  width: 350px;
+  padding: 2rem;
+  min-height: 10px;
+}
+
+
+
