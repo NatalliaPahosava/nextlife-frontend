@@ -38,9 +38,9 @@ const SingleItem = () => {
         <p><b>Zip Code:</b>{zip}</p>
         <p><b>Availability:</b>{availability}</p>
         
-        <div className='update-form'>
+        <div className='update-forms'>
         {showForm && (
-          <form className='add-form' action=''>
+          <form className='' action=''>
             <label htmlFor=''>Item title</label>
             <input
               onChange={(e) => handleForm(e)}
@@ -134,7 +134,7 @@ const SingleItem = () => {
               <option value="available"/>
               <option value="not available"/>
             </datalist>
-            <button onClick={handleUpdate}>Update Item</button>
+            <button className="update-btn"onClick={handleUpdate}>Update Item</button>
           </form>
         )}
         <button className='form-btn' onClick={() => setShowForm(!showForm)}>Show Form</button>

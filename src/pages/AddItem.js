@@ -28,7 +28,7 @@ const AddItem = () => {
       <div className='add-item'>
       <h1>Add Item</h1>
       <form className='add-form' action=''>
-        
+
         <label htmlFor=''>Item title</label>
         <input
           onChange={(e) => handleForm(e)}
@@ -123,7 +123,7 @@ const AddItem = () => {
               <option value='not available'/>
             </datalist>
       </form>
-      <button className="add-btn" onClick={event=>sendItem(event)}>Add Item</button>
+      <button className="add-btn" onClick={event=>sendItem(event)}>Add</button>
     </div>
     </div>
   )

@@ -21,6 +21,7 @@ body {
 .container-about {
   display: flex;
   flex-direction: row;
+  margin: 200px;
 }
 .about h1 {
   font-family: 'Times New Roman', Times, serif;
@@ -201,19 +202,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-.add-form {
-  width: 350px;
-  padding: 2rem;
-}
-
-.add-item .add-form label {
-  margin: 2rem;
-}
-
-.add-form input {
-  float: right;
-}
 .form-btn{
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.736);
  width: 400px;
@@ -223,8 +211,10 @@ margin: 20px;
 background-color: #6993f3f8;
 color: white;
 }
-
-/* .single-item{
+.form-btn:hover{
+  background-color: #1b3e8ef8;
+}
+.single-item{
   padding: 2rem;
   margin: 2rem 0;
   font-size: 20px;
@@ -234,7 +224,7 @@ color: white;
   color: #111;
   box-shadow: 15px 15px 30px #0f2dd9, -15px -15px 30px #051ec0;
   transition: 0.3s;
-} */
+}
 
 .single-item > img {
   width: 100%;
@@ -251,7 +241,7 @@ color: white;
   color: #716c6b;
   font-size: 20px;
   width: 450px;
-  height: 700px;
+  height: 790px;
   border-radius: 30px;
   background: white;
   box-shadow: 15px 15px 30px  #6993f3f8, -15px -15px 30px  #6993f3f8;
@@ -290,7 +280,7 @@ color: white;
   width: 400px;
   height: 400px;
 }
-.update-form form {
+.update-forms form {
   position: absolute;
   left: 1000px;
   top: 20rem;
@@ -304,30 +294,78 @@ color: white;
   text-decoration: none;
   color: #ffffff;
   width: 300px;
-  height: 400px;
+  height: 450px;
   border-radius: 92px;
   background: #6993f3f8;
-  box-shadow: 15px 15px 30px #4d0dd6, -15px -15px 30px #050844;
+  box-shadow: 15px 15px 30px  #0d2b70a0, -15px -15px 30px  #03194b9e;
+}
+.update-forms input{
+  width: 200px;
+  height: 25px;
+  font-size: 18px;
+  border: solid;
+  border-color: aliceblue;
+}
+.update-form button{
+  margin:10px;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  border-color: #716c6b;
+  border-radius: 10px;
+}
+.update-btn{
+  margin:20px;
+  background-color: rgb(190, 17, 17);
+  color: aliceblue;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-color: #716c6b;
+  border-radius: 5px; 
+}
+.update-btn:hover{
+  background-color: black;
+}
+.add-item label{
+  margin: 2rem;
+}
+.add-item {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0;
+  align-items: center;
+  border: solid;
+  border-color: aliceblue;
+  border-radius: 20px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 }
 .adding{
-  background-image: url('https://media.istockphoto.com/photos/3d-mockup-podium-with-draped-fabric-in-lavender-color-abstract-modern-picture-id1345448675?b=1&k=20&m=1345448675&s=170667a&w=0&h=PX40wdJl-1YQmszxU-BMUOomp4Zc6vjhYlgZcYUuET8=');
+  background-color: rgb(111, 172, 248);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 55vh;
+  padding: 200px ;
 }
-.add-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-}
-
 .add-form {
   width: 350px;
-  padding: 2rem;
-  min-height: 10px;
+  padding: 3rem;
+  margin: 2px;
+
 }
+
+.add-form input {
+  float: right;
+  height: 18px;
+border: solid rgba(128, 128, 128, 0.576);
+border-radius: 5px;
+}
+
 
 
 
