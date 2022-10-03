@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer>
-      <a href="https://github.com/NatalliaPahosava/cookies-frontend">Github source frontend</a>
-      <a href="https://github.com/NatalliaPahosava/newcookies-backend">Github source backend</a>
+      <a href="https://github.com/NatalliaPahosava/nextlife-frontend">Github source frontend</a>
+      <a href="https://github.com/NatalliaPahosava/nextlife-api">Github source backend</a>
       <small>Copyrights © 2022| all rights reserved </small>
     </footer>
   )
