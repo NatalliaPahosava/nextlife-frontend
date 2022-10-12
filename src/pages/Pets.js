@@ -5,7 +5,8 @@ const Pets = () => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:4040')
+    fetch('http://54.89.144.95:4040')
+    // fetch('http://localhost:4040')
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((err) => console.error(err))

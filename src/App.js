@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import SingleItem from './pages/SingleItem'
 import AddItem from './pages/AddItem'
-import About from './pages/About'
+import Home from './pages/Home'
 import Kids from './pages/Kids'
 import Admin from './pages/Admin'
 import AdminSingleItem from './pages/AdminSingleItem'
@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
     <Header/>
       <Routes>
-        <Route path='/' element={<About/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/all' element={<AllItems />} />
         <Route path='/single-item' element={<SingleItem/>}/>
         <Route path='/add-item' element={<AddItem/>} />

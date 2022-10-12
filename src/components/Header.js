@@ -10,7 +10,7 @@ const Header = () => {
         </a>
         <h1>NextLive</h1>
         <li>
-          <a href='/'>About</a>
+          <a href='/'>Home</a>
         </li>
         <li>
           <a href='/all'>All Items</a>

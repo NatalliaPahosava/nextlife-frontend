@@ -9,21 +9,24 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.header {
+.header {  
+  width: 100%;
   height: 100px;
   color: white;
-  display: flex;
-  background-color: rgb(35, 138, 234);
-  /* flex-direction: row; */
-  margin: auto;
+
 }
 
-.container-about {
-  display: flex;
-  flex-direction: row;
-  margin: 200px;
+.container-home {
+min-height: 80vh;
+display: flex;
+
 }
-.about h1 {
+@media (max-width: 1600px) {
+  .container-home {
+    flex-direction: column;
+  }
+}
+.home h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 90px;
   min-height: 90px;
@@ -32,19 +35,19 @@ body {
   margin: auto;
   background-color: white;
 }
-.about {
+.home {
   min-height: 90vh;
   background-color: rgb(126, 187, 245);
 }
-.about h2 {
+.home h2 {
   color: aliceblue;
   margin: 10px;
   text-align: center;
 }
-.about hr {
+.home hr {
   color: red;
 }
-.about h3 {
+.home h3 {
   color: aliceblue;
   margin: 10px;
   text-align: center;
@@ -69,11 +72,11 @@ body {
 }
 .departments {
   display: flex;
-  flex-direction: row;
+  
   justify-content: space-between;
   flex-wrap: nowrap;
-  align-content: center;
-}
+  align-content: center;}
+
 
 .department {
   display: flex;
@@ -92,9 +95,11 @@ body {
   transition: 0.3s;
   background-color: white;
 }
+
 .department:hover {
   background-color: rgba(17, 17, 17, 0.651);
 }
+
 
 ul {
   display: flex;
@@ -107,7 +112,12 @@ ul {
   list-style-type: none;
   background-color: rgb(35, 138, 234);
 }
-
+/* @media (max-width: 1600px) {
+  ul {
+    width: 100%;
+    flex-direction: column;
+  }
+} */
 li a {
   border: solid white;
   border-radius: 20px;
@@ -127,9 +137,23 @@ li a:hover {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  /* margin: 4rem auto; */
+  height: 100vh;
+  background: rgb(80,94,221);
+  background: radial-gradient(circle, rgba(80,94,221,1) 0%, rgba(21,96,219,1) 44%, rgba(37,203,237,1) 82%);
+}
+.container-admin{
+  margin-top: 0px;
   min-width: 1200px;
-  margin: 4rem auto;
-  min-height: 70vh;
+  min-height: 80vh;
+  background: rgb(80,94,221);
+  background: radial-gradient(circle, rgba(80,94,221,1) 0%, rgba(21,96,219,1) 44%, rgba(37,203,237,1) 82%);
 }
 .container-all {
   text-align: center;
@@ -195,6 +219,7 @@ li a:hover {
 }
 
 footer {
+  height: 100px;
   margin: 10px;
   width: 100%;
   text-align: center;
@@ -215,7 +240,7 @@ color: white;
   background-color: #1b3e8ef8;
 }
 .single-item{
-  padding: 2rem;
+  padding: 2rem; 
   margin: 2rem 0;
   font-size: 20px;
   border-radius: 5px;
@@ -228,20 +253,20 @@ color: white;
 
 .single-item > img {
   width: 100%;
-  height: 400px;
+  height: 200px;
   object-fit: cover;
 }
 .single-item h1{
   text-align: center;
 }
 .single-item {
-  margin: 3rem auto;
-  padding: 36px;
+  margin: auto;
+  padding: 20px;
   text-decoration: none;
   color: #716c6b;
-  font-size: 20px;
+  font-size: 18px;
   width: 450px;
-  height: 790px;
+  height: 700px;
   border-radius: 30px;
   background: white;
   box-shadow: 15px 15px 30px  #6993f3f8, -15px -15px 30px  #6993f3f8;
@@ -249,7 +274,7 @@ color: white;
 
 .single-item > img {
   width: 100%;
-  height: 400px;
+  height: 350px;
   object-fit: cover;
 }
 .contact {
