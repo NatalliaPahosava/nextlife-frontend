@@ -52,6 +52,9 @@ display: flex;
   margin: 10px;
   text-align: center;
 }
+.add-item label{
+  margin: 1rem;
+}
 .add-btn {
   justify-content: center;
   text-align: center;
