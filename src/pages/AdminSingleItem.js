@@ -50,7 +50,7 @@ console.log(_id)
   }
 
   return (
-    <div className='container-admin'>
+    <div className='container'>
       <div className='single-item'>
         <h1>{title}</h1>
         <img src={image} alt=''/>
