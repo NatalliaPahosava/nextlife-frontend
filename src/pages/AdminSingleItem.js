@@ -20,7 +20,7 @@ console.log(_id)
   const handleDelete = (event) => {
     event.preventDefault()
     fetch(`http://54.89.144.95:4040?_id=${_id}`, {
-      // fetch(`http://localhost:4040?title=${title}`, {
+      // fetch(`http://localhost:4040?_id=${_id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ console.log(_id)
   }
 
   return (
-    <div className='container'>
+    <div className='container-admin'>
       <div className='single-item'>
         <h1>{title}</h1>
         <img src={image} alt=''/>

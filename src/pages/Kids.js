@@ -5,8 +5,8 @@ const Kids = () => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
+    // fetch(process.env.REACT_APP_API_ENDPOINT)
     fetch('http://54.89.144.95:4040')
-    // fetch('http://localhost:4040')
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((err) => console.error(err))

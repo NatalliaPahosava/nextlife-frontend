@@ -136,7 +136,7 @@ li a {
 }
 @media (max-width: 1600px) {
   li a{
-    border-radius: 10px;
+    border-radius: 18px;
     display: block;
     color: white;
     width: 80px;

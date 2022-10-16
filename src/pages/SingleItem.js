@@ -12,8 +12,9 @@ const SingleItem = () => {
   const handleUpdate = (event) => {
     event.preventDefault()
 
-    fetch(`http://54.89.144.95:4040?title=${title}`, {
-    // fetch(`http://localhost:4040?title=${title}`, {
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}?title=${title}`, {
+    // fetch(`http://54.89.144.95:4040?title=${title}`, {
+    
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
