@@ -5,8 +5,11 @@ const ForMen = () => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-   // fetch(process.env.REACT_APP_API_ENDPOINT)
-    fetch('http://54.89.144.95:4040')
+    const userToken= localStorage.getItem('userToken')
+    fetch(process.env.REACT_APP_API_ENDPOINT, {
+      headers:{Authentication:userToken 
+      }}
+    )
    
       .then((res) => res.json())
       .then((data) => setItems(data))
@@ -20,7 +23,7 @@ const ForMen = () => {
         return( <ItemCard key={key} item={item}/>)})
         return(
             <div className="container-all">
-              <hr/>
+            <hr/>
             <h1>ALL FOR MEN</h1>
             <hr/>
             <div className="products">{forMenFiltered}</div>

@@ -15,13 +15,20 @@ import Electronics from './pages/Electronics'
 import Furniture from './pages/Furniture'
 import Contacts from './pages/Contacts'
 import './assets/styles.css'
+import Login from './pages/Login'
+import SignUp from './pages/Signup'
+import PrivateRoutes from './pages/PrivateRoutes'
+
 
 function App() {
   return (
     <BrowserRouter>
     <Header/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route element={<PrivateRoutes/>} >
+        <Route path='/home' element={<Home/>}/>
         <Route path='/all' element={<AllItems />} />
         <Route path='/single-item' element={<SingleItem/>}/>
         <Route path='/add-item' element={<AddItem/>} />
@@ -31,9 +38,12 @@ function App() {
         <Route path='/pets' element={<Pets/>}/>
         <Route path='/electronics' element={<Electronics/>}/>
         <Route path='/furniture' element={<Furniture/>}/>
-        <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/admin' element={<Admin/>}/>
         <Route path='admin-single-item' element={<AdminSingleItem/>}/>
+        </Route>
+      
+        
+        <Route path='/contacts' element={<Contacts/>}/>
         <Route path='*' element={<h2>Page not Found</h2>} />
       </Routes>
       <Footer/>

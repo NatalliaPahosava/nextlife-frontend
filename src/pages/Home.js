@@ -1,14 +1,18 @@
+import { useNavigate } from "react-router-dom"
+
 const Home = () => {
+  const navigate=useNavigate()
   return (
-    <div className='home'>
+    <div >
+      <div className='h1'>
       <hr color='red' />
       <h1>NextLive</h1>
-      <hr color='red' />
+      </div>
+     <hr color='red' />
+    <div className='home'>
       <h2>What unnecessary for you,can be used somebody else</h2>
       <h3>If You want to share click on the button Add</h3>
-      <a href='/add-item'>
-        <button className='add-btn'>Add</button>
-      </a>
+        <button className='add-btn' onClick={()=>{navigate('/add-item')}}>Add</button>
       <div className='container-home'>
         <div className='department'>
           <h3>
@@ -25,7 +29,6 @@ const Home = () => {
         </div>
         <div className='department'>
           <h3>
-            {' '}
             <a href='/men'>Men</a>
           </h3>
           <a href='/men'>
@@ -38,7 +41,6 @@ const Home = () => {
         </div>
         <div className='department'>
           <h3>
-            {' '}
             <a href='/kids'>Kids</a>
           </h3>
           <a href='/kids-item'>
@@ -52,8 +54,8 @@ const Home = () => {
 
         <div className='department'>
           <h3>
-            {' '}
-            <a href='/furniture'>Furniture</a>{' '}
+            
+            <a href='/furniture'>Furniture</a>
           </h3>
           <a href='/furniture'>
             <img
@@ -65,7 +67,7 @@ const Home = () => {
         </div>
         <div className='department'>
           <h3>
-            {' '}
+            
             <a href='/electronics'>Electronics</a>
           </h3>
           <br />
@@ -83,7 +85,7 @@ const Home = () => {
         </div>
         <div className='department'>
           <h3>
-            {' '}
+          
             <a href='/pets'>Pets</a>
           </h3>
           <br />
@@ -96,6 +98,7 @@ const Home = () => {
           </a>
         </div>
       </div>
+    </div>
     </div>
   )
 }

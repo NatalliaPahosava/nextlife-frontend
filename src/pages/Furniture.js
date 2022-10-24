@@ -4,9 +4,13 @@ import { ItemCard } from '../components/ItemCard'
 const Furniture = () => {
   const [items, setItems] = useState([])
 
-  useEffect(() => {
-    // fetch(process.env.REACT_APP_API_ENDPOINT)
-    fetch('http://54.89.144.95:4040')
+
+    useEffect(() => {
+      const userToken= localStorage.getItem('userToken')
+      fetch(process.env.REACT_APP_API_ENDPOINT, {
+        headers:{Authentication:userToken 
+        }}
+      )
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((err) => console.error(err))
