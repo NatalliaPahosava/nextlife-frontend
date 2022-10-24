@@ -181,7 +181,9 @@ const AdminSingleItem = () => {
           <button className='form-btn' onClick={() => setShowForm(!showForm)}>
             Show Form
           </button>
-          <button className='form-btn' onClick={handleDelete}>
+          <br/>
+          <br/>
+          <button className='delete-btn' onClick={handleDelete}>
             Delete Item
           </button>
         </div>
