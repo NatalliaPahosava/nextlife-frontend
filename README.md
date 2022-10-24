@@ -19,3 +19,5 @@ See the [demo link](http://nextlife-np.s3-website-us-east-1.amazonaws.com/).
 ![Demo screen shot](https://github.com/NatalliaPahosava/nextlife-frontend/blob/main/src/assets/img/demo-2.png)
 
 ![Demo screen shot](https://github.com/NatalliaPahosava/nextlife-frontend/blob/main/src/assets/img/demo-3.png)
+
+![Demo screen shot](https://github.com/NatalliaPahosava/nextlife-frontend/blob/main/src/assets/img/demo-4.png)
