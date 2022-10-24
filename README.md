@@ -11,7 +11,7 @@ Fullstack App
 
 
 ## Demo
-See the [demo link](http://nextlife-np.s3-website-us-east-1.amazonaws.com/) on AWS S3 Bucket. 
+See the [demo link](http://nextlife-np.s3-website-us-east-1.amazonaws.com/). 
 [Back End Link](https://github.com/NatalliaPahosava/nextlife-api)
 
 ![Demo screen shot](https://github.com/NatalliaPahosava/nextlife-frontend/blob/main/src/assets/img/demo-1.png)
