@@ -6,12 +6,16 @@ import { useEffect } from 'react'
 // const S3_BUCKET = 'nextlife-image'
 // const REGION = 'us-east-1'
 
-const S3_BUCKET = 'nextlife-image'
-const REGION = 'us-east-1'
+const S3_BUCKET = process.env.REACT_APP_S3_BUCKET
+const REGION = process.env.REACT_APP_REGION
 
+// AWS.config.update({
+//   accessKeyId: 'AKIASMNFYOZB77XLPT3W',
+//   secretAccessKey: '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',
+// })
 AWS.config.update({
-  accessKeyId: 'AKIASMNFYOZB77XLPT3W',
-  secretAccessKey: '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',
+  accessKeyId: process.env.REACT_APP_AWS_KEY,
+  secretAccessKey: process.env.REACT_APP_AWS_SECRET,
 })
 
 
