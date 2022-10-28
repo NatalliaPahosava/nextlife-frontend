@@ -438,7 +438,7 @@ li a:hover {
   object-fit: cover;
   border-radius: 50px;
 }
-
+/*---- FOOTER ----*/
 footer {
   height: 100px;
   margin: 10px;
@@ -471,8 +471,6 @@ footer {
   box-shadow: 15px 15px 30px #0f2dd9, -15px -15px 30px #051ec0;
   transition: 0.3s;
 }
-
-
 .single-item h1 {
   text-align: center;
 }
@@ -494,6 +492,7 @@ footer {
   height: 350px;
   object-fit: cover;
 }
+/* --Contact Page--- */
 .contact {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -525,16 +524,17 @@ footer {
   width: 400px;
   height: 400px;
 }
+
+/*--- ADMIN/ALL PAGE--- */
 .update-forms form {
   position: absolute;
-  left: 800px;
-  top: 10rem;
+  top: 2rem;
   border: 1px solid gray;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 3rem 0;
+  margin: 20rem auto;
   padding: 36px;
   text-decoration: none;
   color: #ffffff;
@@ -585,6 +585,7 @@ footer {
 .delete-btn:hover{
 background-color: black;
 }
+  /*--ADD ITEM PAGE ---*/
 .adding {
   color: white;
   background: rgb(159, 160, 173);
