@@ -38,7 +38,7 @@ const Login = () => {
       <div className='container-login'>
         <h1 className='header-main'>NextLife</h1>
         <h2 className='header-second'>
-          What unnecessary for you, can be used somebody else
+        What is unnecessary for you, can be used by someone else
         </h2>
         <h2 className='header-second'>Log in</h2>
         <form action='submit' onSubmit={handleFormSubmit} method='post'>

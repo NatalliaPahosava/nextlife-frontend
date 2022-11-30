@@ -115,7 +115,7 @@ const SingleItem = () => {
             <label htmlFor=''>Phone:</label>
             <input
               onChange={(e) => handleForm(e)}
-              type='string'
+              type='number'
               min={0}
               placeholder='444-555-6677'
               name='phone'
